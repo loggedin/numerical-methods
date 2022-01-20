@@ -36,7 +36,7 @@ This script uses both Euler and Heun's methods to solve the differential equatio
 
 Example output:
 
-![euler-heun](https://user-images.githubusercontent.com/97130665/150401322-055aadbc-9a01-4619-b8d1-fd80303c05ab.png)
+![euler-heun](https://user-images.githubusercontent.com/97130665/150409899-07589d94-ec1c-414e-af49-15f7b8d0b9a5.png)
 
 Both the Euler and Heun methods split the solution of the given differential equation into a series of intervals. The Euler method uses the gradient of the solution at the beginning of each interval to estimate the next point in the solution. This assumes that the solution is linear. However, the Heun method uses the average of the gradients at the beginning and end of each interval to estimate the next point in the solution. Therefore, the Heun method is more accurate than the Euler method as it takes the fact that the solution may be nonlinear into consideration.
 
