@@ -10,7 +10,7 @@ This script uses the backwards difference method to estimate the derivatve of a 
 
 Example output:
 
-![backwards-difference](https://user-images.githubusercontent.com/97130665/150401262-a8ff538d-c658-4183-9809-c67c445f25f3.png)
+![backwards-difference](https://user-images.githubusercontent.com/97130665/150409317-95b0076e-ca7c-4a41-99a1-a579f025d8a8.png)
 
 The maximum precision of a floating-point number in Python is 16 significant figures. Therefore, when dx is too small there is a varying percentage error in f(x)-f(x-dx), explaining the erratic error plot. When dx is too large, the estimate loses accuracy because f(x) is nonlinear.
 
