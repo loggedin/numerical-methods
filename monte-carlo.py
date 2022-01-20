@@ -1,5 +1,3 @@
-'''This module uses random numbers to estimate the value of pi. A curve is plotted showing the root mean square value of the error against the number of random points cast.'''
-
 from __future__ import division
 import numpy
 import numpy.random
@@ -46,6 +44,3 @@ pyplot.xlabel("number of points cast")
 pyplot.plot(point_counts,y_data,"-o")
 pyplot.loglog()
 pyplot.show()
-
-#COMMENT: The accuracy increases with the number of points. Whether a point lies within the quarter-circle or not is random. Therefore, due to the central limit theorem, the error in the resulting estimate of pi is inversely proportional to the square root of the number of points.
-
