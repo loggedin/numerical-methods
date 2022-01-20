@@ -1,5 +1,3 @@
-'''This module calculates the definite integral of a function using Simpson's rule. A curve is plotted showing the relative error in the numerical method against the number of panels used.'''
-
 from __future__ import division
 import numpy
 import matplotlib.pyplot as pyplot
@@ -45,6 +43,3 @@ pyplot.xlabel("number of panels used")
 pyplot.plot(panel_counts,y_data,"-o",ms=10)
 pyplot.loglog()
 pyplot.show()
-
-#COMMENT: As the panel count increases, the quadratic fits for each panel become more accurate, so the accuracy of the numerical method increases. Since the precision of floating-point numbers in Python is finite, there is a varying percentage error in integrate_simpson(x0,x1,i)-ref. This becomes significant when the panel count exceeds 1e3 and causes the corresponding accuracy of the method to fluctuate. If f(x)=x^2, the quadratic fits would always be completely accurate as f(x) would be a quadratic. Therefore, in theory, the panel count would not affect the accuracy of the integral. However, in practice, when the panel count exceeds 1e2, the accuracy of the numerical method decreases. I am unsure why this is the case.
-
