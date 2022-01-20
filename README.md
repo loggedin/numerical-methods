@@ -4,7 +4,7 @@ This repository contains scripts that demonstrate various numerical methods.
 
 ## backwards-difference.py
 
-This module uses the backwards difference method to estimate the derivatve of a function. For each of the several values of step size used, a curve is plotted showing the error in the corresponding estimate.
+This script uses the backwards difference method to estimate the derivatve of a function. For each of the several values of step size used, a curve is plotted showing the error in the corresponding estimate.
 
 	python3 backwards-difference.py
 
@@ -16,7 +16,7 @@ The maximum precision of a floating-point number in Python is 16 significant fig
 
 ## simpson.py
 
-This module calculates the definite integral of a function using Simpson's rule. A curve is plotted showing the relative error in the numerical method against the number of panels used.
+This script calculates the definite integral of a function using Simpson's rule. A curve is plotted showing the relative error in the numerical method against the number of panels used.
 
 	python3 simpson.py
 
@@ -28,7 +28,7 @@ As the panel count increases, the quadratic fits for each panel become more accu
 
 ## euler-heun.py
 
-This module uses both Euler and Heun's methods to solve the differential equation that describes radioactive decay. A figure containing tow graphs is produced: the upper graph plots both numeric decay curves, as well as the analytic solution, against time; the lower graph plots the absolute relative error in the numeric decay curves against time.
+This script uses both Euler and Heun's methods to solve the differential equation that describes radioactive decay. A figure containing tow graphs is produced: the upper graph plots both numeric decay curves, as well as the analytic solution, against time; the lower graph plots the absolute relative error in the numeric decay curves against time.
 
 	python3 euler-heun.py
 
@@ -40,7 +40,7 @@ Both the Euler and Heun methods split the solution of the given DEQ into a serie
 
 ## monte-carlo.py
 
-This module uses random numbers to estimate the value of pi. A curve is plotted showing the root mean square value of the error against the number of random points cast.
+This script uses random numbers to estimate the value of pi. A curve is plotted showing the root mean square value of the error against the number of random points cast.
 
 	python3 monte-carlo.py
 
