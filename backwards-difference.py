@@ -1,5 +1,3 @@
-'''This module uses the backwards difference method to estimate the derivatve of a function. For each of the several values of step size used, a curve is plotted showing the error in the corresponding estimate.'''
-
 from __future__ import division
 import numpy
 import matplotlib.pyplot as pyplot
@@ -35,6 +33,3 @@ pyplot.plot(xs,df_dx_large-df_dx_analytical,color="red",label="dx is too large")
 pyplot.plot(xs,df_dx_good-df_dx_analytical,color="green",label="dx is well chosen")
 pyplot.legend()
 pyplot.show()
-
-#COMMENT: The maximum precision of a floating-point number in Python is 16 significant figures. Therefore, when dx is too small there is a varying percentage error in f(x)-f(x-dx), explaining the erratic error plot. When dx is too large, the estimate loses accuracy because f(x) is nonlinear.
-
