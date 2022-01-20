@@ -1,5 +1,3 @@
-'''This module uses both Euler and Heun's methods to solve the differential equation that describes radioactive decay. A figure containing tow graphs is produced: the upper graph plots both numeric decay curves, as well as the analytic solution, against time; the lower graph plots the absolute relative error in the numeric decay curves against time.'''
-
 from __future__ import division
 import numpy
 import matplotlib.pyplot as pyplot
@@ -83,6 +81,3 @@ pyplot.legend(loc=4)
 
 pyplot.tight_layout()
 pyplot.show()
-
-#COMMENT: Both the Euler and Heun methods split the solution of the given DEQ into a series of intervals. The Euler method uses the gradient of the solution at the beginning of each interval to estimate the next point in the solution. This assumes that the solution is linear. However, the Heun method uses the average of the gradients at the beginning and end of each interval to estimate the next point in the solution. Therefore, the Heun method is more accurate than the Euler method as it takes the fact that the solution may be nonlinear into consideration.
-
