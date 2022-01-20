@@ -70,7 +70,7 @@ pyplot.legend()
 #Plot the lower graph: the absolute relative error in the two numeric decay curves against time
 pyplot.subplot(212)
 pyplot.title("Error scaling compared for ODE solvers")
-pyplot.ylabel("absolute relative error")
+pyplot.ylabel("relative error")
 pyplot.xlabel("time / hours")
 error_euler=abs((n_euler-n_analytic)/n_analytic)
 pyplot.plot(timebase,error_euler,color="red",label="Euler's method")
