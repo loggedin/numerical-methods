@@ -28,7 +28,7 @@ As the panel count increases, the quadratic fits for each panel become more accu
 
 ## euler-heun.py
 
-This script uses both Euler and Heun's methods to solve the differential equation that describes radioactive decay. A figure containing tow graphs is produced: the upper graph plots both numeric decay curves, as well as the analytic solution, against time; the lower graph plots the absolute relative error in the numeric decay curves against time.
+This script uses both Euler and Heun's methods to solve the differential equation that describes radioactive decay. A figure containing two graphs is produced: the upper graph plots both numeric decay curves, as well as the analytic solution, against time; the lower graph plots the absolute relative error in the numeric decay curves against time.
 
 	python3 euler-heun.py
 
