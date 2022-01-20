@@ -16,7 +16,7 @@ The maximum precision of a floating-point number in Python is 16 significant fig
 
 ## simpson.py
 
-This script calculates the definite integral of a function using Simpson's rule. A curve is plotted showing the relative error in the numerical method against the number of panels used.
+This script calculates the definite integral of a function using Simpson's 1/3 rule. A curve is plotted showing the relative error in the numerical method against the number of panels used.
 
 	python3 simpson.py
 
@@ -24,7 +24,9 @@ Example output:
 
 ![simpson](https://user-images.githubusercontent.com/97130665/150401285-0db0cfaa-ee79-44ff-8cf4-6e7a2320ea71.png)
 
-As the panel count increases, the quadratic fits for each panel become more accurate, so the accuracy of the numerical method increases. Since the precision of floating-point numbers in Python is finite, there is a varying percentage error in integrate_simpson(x0,x1,i)-ref. This becomes significant when the panel count exceeds 1e3 and causes the corresponding accuracy of the method to fluctuate. If f(x)=x^2, the quadratic fits would always be completely accurate as f(x) would be a quadratic. Therefore, in theory, the panel count would not affect the accuracy of the integral. However, in practice, when the panel count exceeds 1e2, the accuracy of the numerical method decreases. I am unsure why this is the case.
+As the panel count increases, the quadratic fits for each panel become more accurate, so the accuracy of the numerical method increases.
+
+It is interesting to note that, since the precision of floating-point numbers in Python is finite, there is a varying percentage error in integrate_simpson(x0,x1,i)-ref. This becomes significant when the panel count exceeds 1e3 and causes the corresponding accuracy of the method to fluctuate.
 
 ## euler-heun.py
 
@@ -36,7 +38,7 @@ Example output:
 
 ![euler-heun](https://user-images.githubusercontent.com/97130665/150401322-055aadbc-9a01-4619-b8d1-fd80303c05ab.png)
 
-Both the Euler and Heun methods split the solution of the given DEQ into a series of intervals. The Euler method uses the gradient of the solution at the beginning of each interval to estimate the next point in the solution. This assumes that the solution is linear. However, the Heun method uses the average of the gradients at the beginning and end of each interval to estimate the next point in the solution. Therefore, the Heun method is more accurate than the Euler method as it takes the fact that the solution may be nonlinear into consideration.
+Both the Euler and Heun methods split the solution of the given differential equation into a series of intervals. The Euler method uses the gradient of the solution at the beginning of each interval to estimate the next point in the solution. This assumes that the solution is linear. However, the Heun method uses the average of the gradients at the beginning and end of each interval to estimate the next point in the solution. Therefore, the Heun method is more accurate than the Euler method as it takes the fact that the solution may be nonlinear into consideration.
 
 ## monte-carlo.py
 
